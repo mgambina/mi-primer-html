@@ -23,6 +23,65 @@
             <li>dos</li>
             <li>tres</li>
         </ol>
+
         <button>apretame</button>
+        <table>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th> 
+              <th>Age</th>
+              <th>Imagen</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td> 
+              <td>50</td>
+              <td><img src="https://media.giphy.com/media/l4hLTU9vannBNUQy4/giphy.gif" width="300"/></td>
+
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td> 
+              <td>94</td>
+              <td><img src="grlpwr.jpg" width="300"/></td>
+            </tr>
+          </table>
+          <br>
+        
+
+          <form action="" method=get>
+                <label><b><i>Por favor completa la informacion</b></i></label><br><br/>
+              <label>Name</label><input type="text" name="nombre" value="Nombre" maxlength="1000"/>
+              <br/>
+              <br/>
+            <label>Genero</label>&nbsp;&nbsp;
+              <input type="radio" name="genero" value="F">Femenino</input>
+              <label>Masculino</label><input type="radio" name="genero" value="M"/>
+              <label>Otro</label><input type="radio" name="genero" value="O"/>
+              <br/>
+              <br/>
+              <label>Pais de residencia</label><br><select name="select">
+                  <option value="1">Argentina</option>
+                  <option value="2">Cuba</option>
+                  <option value="3">Brasil</option>
+              </select>
+              <br/>
+              <label>Deportes</label><br><select name="select" multiple="true">
+                    <option value="1">Futbol</option>
+                    <option value="2">Tenis</option>
+                    <option value="3">Natacion</option>
+                </select>
+              
+              <br/>
+              <br/>
+              <label>E-mail</label><input type="text" mail="e-mail" value="E-mail" maxlength="1000"/>
+              <br/>
+              <br/>
+              <label>Deja un comentario por favor</label><br>
+              <textarea rows="5" cols="25"></textarea>
+              <br/>
+              <input type="submit" value="Submit"/>
+
+          </form>
     </body>
 </html>
