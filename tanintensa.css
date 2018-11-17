@@ -1,6 +1,5 @@
 .clase1 {
     width:100%;
-    height:300px;
     color: black;
     background: rgb(217, 217, 217);
     font-weight: bold;
@@ -12,17 +11,19 @@
 
 .clase1b {
     width:60%;
-    height:100px;
     color: black;
     background: rgb(153, 152, 152);
     font-weight: bold;
     text-align: center;
     margin: auto
 }
- 
+
+.clase1b ul {
+    margin: 0
+}
 .clase2 {
     width:100%;
-    height:100px;
+    min-height:100px;
     color: black;
     background: rgb(217, 217, 217);
     font-weight: bold;
@@ -33,20 +34,21 @@
  
 .clase3 {
     width:20%;
-    height:170px;
+    min-height:170px;
     color: black;
     float: left;
     background: rgb(217, 217, 217);
     font-weight: bold;
     text-align: center;
     border: 5px solid white;
-    font-size: 23px
+    font-size: 23px;
+    
 
 }
  
 .clase4 {
     width:78.59%;
-    height:170px;
+    min-height:170px;
     color: black;
     float: left;
     background: rgb(217, 217, 217);
@@ -60,7 +62,7 @@
  
 .clase5 {
     width:100%;
-    height:30px;
+    min-height:30px;
     color: black;
     background: rgb(217, 217, 217);
     font-weight: bold;
@@ -71,10 +73,51 @@
 }
 
 .foto {
-    width:300;
-    height:20px;
+    width:20%;
+    min-height:20px;
     background: rgb(217, 217, 217);
     text-align: center;
     float: left;
 }
  
+.flex-container{
+    display: flex;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  
+    .clase3, .clase4 {
+      float: none;
+      width:100%;
+
+    }
+
+    .flex-container{
+        display: block;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .clase3, .clase4 {
+        float: none;
+        width:100%;
+  
+      }
+  
+      .flex-container{
+          display: block;
+      }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .clase3, .clase4 {
+        float: none;
+        width:100%;
+  
+      }
+  
+      .flex-container{
+          display: block;
+      }
+
+}
