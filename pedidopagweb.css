@@ -2,36 +2,52 @@ body{
 font-family: 'Ubuntu', sans-serif;
 }
 
-.logo{
-    width:20%;
-    min-height:100px;
-    color: black;
-    background:white;
-    font-weight: bold;
-    border: 5px solid white;
-    font-size: 60px
-    
-}
 
 .flex-container{
     display: flex;
-    align-items: space-evenly;
+    align-items: center;
+    justify-content: space-evenly;
     flex-direction: row;
-
 }
+
 .menu{
     width:20%;
-    min-height:100px;
     color: black;
     background:white;
     font-weight: bold;
     border: 5px solid white;
     font-size: 14px;
-    margin-top: 1cm
+    margin-top: 1cm;
+    text-align: center
 }
 
-.imagen {
+.logo{
+    font-size: 60px
+    
+}
+
+.imagen{
+    width:100%;
+}
+.imagen img{
      width:100%; height: auto;
 
 }
 
+.container {
+    /*width: 978px;*/
+    margin:50px;
+}
+
+/*@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .clase3, .clase4 {
+        float: none;
+        width:100%;
+  
+      }
+  
+      .flex-container{
+          display: block;
+      }
+}
+*/
