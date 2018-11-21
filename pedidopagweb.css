@@ -2,12 +2,21 @@ body{
 font-family: 'Ubuntu', sans-serif;
 }
 
-
 .flex-container{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     flex-direction: row;
+    justify-content: space-between
+
+}
+
+.logo {
+    display: flex;
+}
+
+.navContainer {
+    display: flex;
+    width: 100%
 }
 
 .menu{
@@ -22,32 +31,156 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 .logo{
-    font-size: 60px
-    
+    font-size: 60px;
 }
 
 .imagen{
     width:100%;
 }
 .imagen img{
-     width:100%; height: auto;
-
+     width:100%; height: auto; 
 }
 
 .container {
-    /*width: 978px;*/
-    margin:50px;
+    margin:20px;
 }
 
-/*@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    .clase3, .clase4 {
-        float: none;
-        width:100%;
-  
-      }
-  
-      .flex-container{
-          display: block;
-      }
+.flex-container2{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:20px
 }
-*/
+
+.title p{
+width:45vw;
+}
+.container3{
+    border-top: dotted;
+    margin:20px
+}
+
+.container3 .title3{
+    margin:20px
+}
+
+.flex-container3{
+display: flex;
+flex-wrap: wrap;
+margin:15px
+}
+
+.box{
+display: flex;
+min-height: 100px;
+width: 100px;
+color: white;
+margin-left: 40px;
+margin-right: 40px;
+margin-bottom: 60px;
+align-items: center;
+justify-content: center
+
+}
+
+.box.uno, .box.tres, .box.cinco, .box.siete, .box.nueve {
+    background-color: black
+}
+.box.dos{
+    background-color: green
+}
+.box.cuatro{
+    background-color: rgba(196, 99, 196, 0.822)
+}
+.box.seis{
+    background-color: rgb(236, 82, 216)
+}
+.box.ocho{
+    background-color: rgb(78, 2, 78)
+}
+.box.diez{
+    background-color: greenyellow
+}
+
+.flex-container4{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px
+
+}
+
+.container4{
+    border-top: dotted;
+    margin:20px;
+}
+
+.title2 p{
+    width:30vw;
+    }
+
+.flex-container5{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    background: black;
+}
+
+.menu2{
+    color: white;
+    margin: auto;
+    height: 50px;
+}
+
+@media only screen and (min-device-width : 667px) and (max-device-width : 768px) {
+    /*.logo{
+        flex-wrap: wrap
+    }
+
+    --NO LOGRO QUE LOGO SE VAYA PARA ARRIBA CUANDO PASO A TABLET, ES PORQUE DEBEERIA ESTAR EN UN DIV SEPARADO?--
+    */
+
+    .box.uno{
+        background-color: rgb(23, 153, 136)
+    }
+    .box.tres{
+        background-color: rgb(240, 231, 114)
+    }
+    .box.cinco{
+        background-color: rgb(64, 228, 187)
+    }
+    .box.siete{
+        background-color: rgb(224, 120, 89)
+    }
+    .box.nueve{
+        background-color: rgb(226, 10, 82)
+    }
+ }
+
+ .flex-container3{
+    display: flex;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .box.uno{
+        background-color: rgb(23, 153, 136)
+    }
+    .box.tres{
+        background-color: rgb(240, 231, 114)
+    }
+    .box.cinco{
+        background-color: rgb(64, 228, 187)
+    }
+    .box.siete{
+        background-color: rgb(224, 120, 89)
+    }
+    .box.nueve{
+        background-color: rgb(226, 10, 82)
+    } 
+
+    .flex-container3{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
