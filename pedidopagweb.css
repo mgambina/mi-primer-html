@@ -134,12 +134,11 @@ justify-content: center
 }
 
 @media only screen and (min-device-width : 667px) and (max-device-width : 768px) {
-    /*.logo{
-        flex-wrap: wrap
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
     }
-
-    --NO LOGRO QUE LOGO SE VAYA PARA ARRIBA CUANDO PASO A TABLET, ES PORQUE DEBEERIA ESTAR EN UN DIV SEPARADO?--
-    */
 
     .box.uno{
         background-color: rgb(23, 153, 136)
@@ -156,11 +155,24 @@ justify-content: center
     .box.nueve{
         background-color: rgb(226, 10, 82)
     }
+
+    .box{
+        display: flex;
+        min-height: 100px;
+        width: 100px;
+        color: white;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 40px;
+        align-items: center;
+        justify-content: center
+        
+        }
+
  }
 
- .flex-container3{
-    display: flex;
-}
+
+
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
     .box.uno{
